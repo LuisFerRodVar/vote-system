@@ -1,1 +1,50 @@
-<mat-form-field> </mat-form-field>
+<form>
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input matInput />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Descripción</mat-label>
+    <input matInput />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Seleccione tipo de votación</mat-label>
+    <mat-select>
+      <mat-option value="0">Votación Mayoritaria</mat-option>
+      <mat-option value="1">Votación Borda</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="input_button">
+    <mat-label>Agregue opciones</mat-label>
+    <input
+      (keyup.enter)="addOption()"
+      [(ngModel)]="currentOption"
+      name="currentOption"
+      matInput
+    />
+    <button type="button" (click)="addOption()" mat-icon-button matSuffix>
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-form-field>
+  <h4>Opciones agregadas:</h4>
+  <mat-list>
+    @for (option of options; track $index) {
+      <mat-list-item class="item">
+        <p>
+          <span>{{ $index + 1 }}. {{ option }}</span
+          ><mat-icon (click)="deleteOption($index)">delete</mat-icon>
+        </p>
+      </mat-list-item>
+    }
+  </mat-list>
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker" />
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</form>

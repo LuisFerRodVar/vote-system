@@ -1,0 +1,20 @@
+form{
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+mat-list{
+  max-height: 200px;
+  scroll-behavior: auto;
+  overflow: scroll;
+}
+
+p{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
