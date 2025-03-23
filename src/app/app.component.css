@@ -1,0 +1,17 @@
+mat-drawer-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+mat-drawer{
+  padding: 1em;
+}
+a{
+  display: flex;
+  align-items: center;
+}
+mat-toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,1 +1,21 @@
-<div>Hola mundo</div>
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side">
+    <h3>Menú</h3>
+    <a routerLink=""><mat-icon>home</mat-icon>Inicio</a>
+    <a routerLink="/vote"><mat-icon>ballot</mat-icon>Crear votación</a>
+    <a routerLink="/result"
+      ><mat-icon>where_to_vote</mat-icon>Unirse a votación</a
+    >
+  </mat-drawer>
+  <mat-toolbar>
+    <button (click)="drawer.toggle()" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+      <mat-icon>how_to_vote</mat-icon>
+      <span>Easy vote</span>
+    </button>
+    <button mat-button>
+      <mat-icon>copyright</mat-icon>
+    </button>
+  </mat-toolbar>
+  <router-outlet />
+</mat-drawer-container>
