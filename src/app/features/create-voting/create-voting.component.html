@@ -10,6 +10,16 @@
   </mat-form-field>
 
   <mat-form-field>
+    <mat-label>Contraseña de votación</mat-label>
+    <input type="password" matInput />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Repita la contraseña</mat-label>
+    <input type="password" matInput />
+  </mat-form-field>
+
+  <mat-form-field>
     <mat-label>Seleccione tipo de votación</mat-label>
     <mat-select>
       <mat-option value="0">Votación Mayoritaria</mat-option>
@@ -41,10 +51,42 @@
     }
   </mat-list>
   <mat-form-field>
-    <mat-label>Choose a date</mat-label>
+    <mat-label>Fecha de finalización</mat-label>
     <input matInput [matDatepicker]="picker" />
     <mat-hint>MM/DD/YYYY</mat-hint>
     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
+  <p>
+    <mat-slide-toggle
+      [checked]="needExtraOptions()"
+      (change)="toggleExtraOptions()"
+      >Solicitar datos a los votantes</mat-slide-toggle
+    ><mat-slide-toggle>Votación pública</mat-slide-toggle>
+  </p>
+  @if (needExtraOptions()) {
+    <mat-form-field>
+      <mat-label>Agregue datos extra</mat-label>
+      <input
+        (keyup.enter)="addOption1()"
+        [(ngModel)]="currentOption1"
+        name="currentOption1"
+        matInput
+      />
+      <button type="button" (click)="addOption1()" mat-icon-button matSuffix>
+        <mat-icon>add</mat-icon>
+      </button>
+    </mat-form-field>
+    <h4>Datos extra:</h4>
+    <mat-list>
+      @for (option1 of options1; track $index) {
+        <mat-list-item class="item">
+          <p>
+            <span>{{ $index + 1 }}. {{ option1 }}</span
+            ><mat-icon (click)="deleteOption1($index)">delete</mat-icon>
+          </p>
+        </mat-list-item>
+      }
+    </mat-list>
+  }
 </form>

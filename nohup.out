@@ -1,0 +1,450 @@
+Component HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  23.68 kB | 
+styles.css           | styles           |   7.83 kB | 
+
+                     | Initial total    | 121.71 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 570.97 kB | 
+main.server.mjs      | main.server      |  25.00 kB | 
+server.mjs           | server           |   1.86 kB | 
+
+Application bundle generation complete. [1.832 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.363 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'ModelSignal<string>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/create-voting/create-voting.component.ts:31:2:
+[37m      31 │   [32mcurrentOption1[37m: ModelSignal<string> = model<string("");
+         ╵   [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2693: 'string' only refers to a type, but is being used as a value here.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/create-voting/create-voting.component.ts:31:46:
+[37m      31 │   currentOption1: ModelSignal<string> = model<[32mstring[37m("");
+         ╵                                               [32m~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  23.79 kB | 
+styles.css           | styles           |   7.83 kB | 
+
+                     | Initial total    | 121.82 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 570.97 kB | 
+main.server.mjs      | main.server      |  25.11 kB | 
+server.mjs           | server           |   1.86 kB | 
+
+Application bundle generation complete. [0.248 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 24.10 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 25.42 kB | 
+
+Application bundle generation complete. [0.196 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 24.16 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 25.49 kB | 
+
+Application bundle generation complete. [0.206 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 26.95 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.27 kB | 
+
+Application bundle generation complete. [0.241 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 26.95 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.28 kB | 
+
+Application bundle generation complete. [0.258 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 26.95 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.28 kB | 
+
+Application bundle generation complete. [0.184 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 26.94 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.27 kB | 
+
+Application bundle generation complete. [0.286 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 26.94 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.27 kB | 
+
+Application bundle generation complete. [0.314 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 26.95 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.27 kB | 
+
+Application bundle generation complete. [0.332 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 27.15 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.48 kB | 
+
+Application bundle generation complete. [0.377 seconds]
+
+17:02:52 [vite] (ssr) ✨ new dependencies optimized: @angular/material/slide-toggle
+17:02:52 [vite] (ssr) ✨ optimized dependencies changed. reloading
+Page reload sent to client(s).
+17:03:01 [vite] (client) ✨ new dependencies optimized: @angular/material/slide-toggle
+17:03:01 [vite] (client) ✨ optimized dependencies changed. reloading
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 27.36 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.68 kB | 
+
+Application bundle generation complete. [0.280 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 27.50 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.83 kB | 
+
+Application bundle generation complete. [0.234 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 27.65 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 28.97 kB | 
+
+Application bundle generation complete. [0.324 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 28.27 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 29.60 kB | 
+
+Application bundle generation complete. [0.360 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 28.54 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 29.86 kB | 
+
+Application bundle generation complete. [0.253 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8101: In the two-way binding syntax the parentheses should be inside the brackets, ex. '[(ngModel)]="(needExtraOptions)"'.
+        Find more at https://angular.dev/guide/templates/two-way-binding[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/create-voting/create-voting.component.html:52:22:
+[37m      52 │ ...at-slide-toggle [32m([ngModel])="(needExtraOptions)"[37m>Test</mat-slid...
+         ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component CreateVotingComponent.
+
+    src/app/features/create-voting/create-voting.component.ts:27:15:
+[37m      27 │   templateUrl: [32m'./create-voting.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8111: Function in event binding should be invoked: needExtraOptions()[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/create-voting/create-voting.component.html:52:22:
+[37m      52 │ ...at-slide-toggle [32m([ngModel])="(needExtraOptions)"[37m>Test</mat-slid...
+         ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component CreateVotingComponent.
+
+    src/app/features/create-voting/create-voting.component.ts:27:15:
+[37m      27 │   templateUrl: [32m'./create-voting.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  28.54 kB | 
+styles.css           | styles           |   7.83 kB | 
+
+                     | Initial total    | 126.57 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 570.97 kB | 
+main.server.mjs      | main.server      |  29.86 kB | 
+server.mjs           | server           |   1.86 kB | 
+
+Application bundle generation complete. [0.300 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8101: In the two-way binding syntax the parentheses should be inside the brackets, ex. '[(ngModel)]="(needExtraOptions)"'.
+        Find more at https://angular.dev/guide/templates/two-way-binding[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/create-voting/create-voting.component.html:52:22:
+[37m      52 │ ...at-slide-toggle [32m([ngModel])="(needExtraOptions)"[37m>Test</mat-slid...
+         ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component CreateVotingComponent.
+
+    src/app/features/create-voting/create-voting.component.ts:27:15:
+[37m      27 │   templateUrl: [32m'./create-voting.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8111: Function in event binding should be invoked: needExtraOptions()[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/create-voting/create-voting.component.html:52:22:
+[37m      52 │ ...at-slide-toggle [32m([ngModel])="(needExtraOptions)"[37m>Test</mat-slid...
+         ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component CreateVotingComponent.
+
+    src/app/features/create-voting/create-voting.component.ts:27:15:
+[37m      27 │   templateUrl: [32m'./create-voting.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 28.64 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 29.97 kB | 
+
+Application bundle generation complete. [0.326 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 28.68 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 30.01 kB | 
+
+Application bundle generation complete. [0.282 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 28.67 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 30.00 kB | 
+
+Application bundle generation complete. [0.288 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 28.68 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 30.01 kB | 
+
+Application bundle generation complete. [0.219 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 28.95 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 30.27 kB | 
+
+Application bundle generation complete. [0.225 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 28.94 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 30.27 kB | 
+
+Application bundle generation complete. [0.302 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 28.98 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 30.31 kB | 
+
+Application bundle generation complete. [0.307 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       | Raw size
+main.js             | main        | 29.23 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       | Raw size
+main.server.mjs     | main.server | 30.56 kB | 
+
+Application bundle generation complete. [0.229 seconds]
+
+Component update sent to client(s).

@@ -8,7 +8,7 @@ import { MatListModule } from '@angular/material/list';
 import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker'
-import {  provideNativeDateAdapter } from '@angular/material/core';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-create-voting',
@@ -22,6 +22,7 @@ import {  provideNativeDateAdapter } from '@angular/material/core';
     MatSnackBarModule,
     MatDatepickerModule,
     MatListModule,
+    MatSlideToggleModule
   ],
   templateUrl: './create-voting.component.html',
   styleUrls: ['./create-voting.component.css'],
@@ -29,7 +30,10 @@ import {  provideNativeDateAdapter } from '@angular/material/core';
 export class CreateVotingComponent {
   private _snackBar = inject(MatSnackBar);
   currentOption: ModelSignal<string> = model<string>("");
+  currentOption1: ModelSignal<string> = model<string>("");
+  needExtraOptions: ModelSignal<boolean> = model<boolean>(false);
   options: string[] = [];
+  options1: string[] = [];
 
   addOption() {
     if (this.currentOption() !== "") {
@@ -41,9 +45,30 @@ export class CreateVotingComponent {
       this.currentOption.set("");
     }
   }
+
+  addOption1() {
+    if (this.currentOption1() !== "") {
+      if(this.options1.includes(this.currentOption1())){
+        this.openSnackBar("Opción duplicada","Cerrar");
+        return
+      }
+      this.options1.push(this.currentOption1());
+      this.currentOption1.set("");
+    }
+  }
+
+  toggleExtraOptions() {
+    this.needExtraOptions.set(!this.needExtraOptions());
+  }
+
   deleteOption(index: number) {
     this.options.splice(index, 1);
   }
+
+  deleteOption1(index: number) {
+    this.options1.splice(index, 1);
+  }
+
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message,action, {duration: 2000});
   }
