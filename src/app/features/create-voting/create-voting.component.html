@@ -1,3 +1,4 @@
+<h1>Crear votación</h1>
 <form>
   <mat-form-field>
     <mat-label>Nombre</mat-label>
@@ -29,12 +30,7 @@
 
   <mat-form-field class="input_button">
     <mat-label>Agregue opciones</mat-label>
-    <input
-      (keyup.enter)="addOption()"
-      [(ngModel)]="currentOption"
-      name="currentOption"
-      matInput
-    />
+    <input (keyup.enter)="addOption()" [(ngModel)]="currentOption" name="currentOption" matInput />
     <button type="button" (click)="addOption()" mat-icon-button matSuffix>
       <mat-icon>add</mat-icon>
     </button>
@@ -42,12 +38,11 @@
   <h4>Opciones agregadas:</h4>
   <mat-list>
     @for (option of options; track $index) {
-      <mat-list-item class="item">
-        <p>
-          <span>{{ $index + 1 }}. {{ option }}</span
-          ><mat-icon (click)="deleteOption($index)">delete</mat-icon>
-        </p>
-      </mat-list-item>
+    <mat-list-item class="item">
+      <p>
+        <span>{{ $index + 1 }}. {{ option }}</span><mat-icon (click)="deleteOption($index)">delete</mat-icon>
+      </p>
+    </mat-list-item>
     }
   </mat-list>
   <mat-form-field>
@@ -58,35 +53,27 @@
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
   <p>
-    <mat-slide-toggle
-      [checked]="needExtraOptions()"
-      (change)="toggleExtraOptions()"
-      >Solicitar datos a los votantes</mat-slide-toggle
-    ><mat-slide-toggle>Votación pública</mat-slide-toggle>
+    <mat-slide-toggle [checked]="needExtraOptions()" (change)="toggleExtraOptions()">Solicitar datos a los
+      votantes</mat-slide-toggle><mat-slide-toggle [checked]="privateVoting()" (change)="togglePrivateVoting()">Votación
+      privada</mat-slide-toggle>
   </p>
   @if (needExtraOptions()) {
-    <mat-form-field>
-      <mat-label>Agregue datos extra</mat-label>
-      <input
-        (keyup.enter)="addOption1()"
-        [(ngModel)]="currentOption1"
-        name="currentOption1"
-        matInput
-      />
-      <button type="button" (click)="addOption1()" mat-icon-button matSuffix>
-        <mat-icon>add</mat-icon>
-      </button>
-    </mat-form-field>
-    <h4>Datos extra:</h4>
-    <mat-list>
-      @for (option1 of options1; track $index) {
-        <mat-list-item class="item">
-          <p>
-            <span>{{ $index + 1 }}. {{ option1 }}</span
-            ><mat-icon (click)="deleteOption1($index)">delete</mat-icon>
-          </p>
-        </mat-list-item>
-      }
-    </mat-list>
+  <mat-form-field>
+    <mat-label>Agregue datos extra</mat-label>
+    <input (keyup.enter)="addOption1()" [(ngModel)]="currentOption1" name="currentOption1" matInput />
+    <button type="button" (click)="addOption1()" mat-icon-button matSuffix>
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-form-field>
+  <h4>Datos extra:</h4>
+  <mat-list>
+    @for (option1 of options1; track $index) {
+    <mat-list-item class="item">
+      <p>
+        <span>{{ $index + 1 }}. {{ option1 }}</span><mat-icon (click)="deleteOption1($index)">delete</mat-icon>
+      </p>
+    </mat-list-item>
+    }
+  </mat-list>
   }
 </form>

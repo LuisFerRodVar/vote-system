@@ -32,6 +32,7 @@ export class CreateVotingComponent {
   currentOption: ModelSignal<string> = model<string>("");
   currentOption1: ModelSignal<string> = model<string>("");
   needExtraOptions: ModelSignal<boolean> = model<boolean>(false);
+  privateVoting: ModelSignal<boolean> = model<boolean>(false);
   options: string[] = [];
   options1: string[] = [];
 
@@ -59,6 +60,10 @@ export class CreateVotingComponent {
 
   toggleExtraOptions() {
     this.needExtraOptions.set(!this.needExtraOptions());
+  }
+
+  togglePrivateVoting() {
+    this.privateVoting.set(!this.privateVoting());
   }
 
   deleteOption(index: number) {
